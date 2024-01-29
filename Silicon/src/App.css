@@ -1,8 +1,17 @@
-.home-background {
-  background: radial-gradient(#EFEFEF, transparent);
+.content-background {
+  background-color: transparent; 
+}
+
+@font-face {
+  font-family: 'Matrice';
+  src: local("Matrice"),url('./assets/fonts/Matrice font/Matrice SemiBold.otf') format("truetype");
 }
 
 .font-Montserat {
   font-family: 'Epilogue', sans-serif;
   font-family: 'Montserrat', sans-serif;
+}
+
+.font-Matrice {
+  font-family: 'Matrice';
 }

@@ -1,16 +1,18 @@
+import { useContext } from 'react';
 import '../App.css'
-import SiliconSvg from '../assets/silicon.svg';
+import { ThemeContext } from '../ThemeContext';
 export default function Header() {
+  const theme = useContext(ThemeContext);
   return (
     <div className="flex justify-around items-center p-4 h-[8%]">
       <div>
-        <p className="text-[#1E1E1E] font-Montserat">About</p>
+        <p className={`text-[${theme?.mode.text}] font-Montserat`}>About</p>
       </div>
       <div className='w-[13rem] h-8 flex items-center'>
-        <img src={SiliconSvg}></img>
+        <img src={theme?.mode.silicon}></img>
       </div>
       <div>
-        <button className="w-[8rem] h-6 p-0 text-[14px] font-Montserat text-[#1E1E1E] bg-transparent border border-[#1E1E1E] rounded-full">Connect Wallet</button>
+        <button className={`w-[8rem] h-6 p-0 text-[14px] font-Montserat text-[${theme?.mode.text}] bg-transparent border border-[${theme?.mode.text}] rounded-full`}>Connect Wallet</button>
       </div>
     </div>
   );

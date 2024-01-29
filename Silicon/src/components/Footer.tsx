@@ -1,16 +1,13 @@
+import Switch from "./Switch";
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
 export default function Footer() {
-
+  const theme = useContext(ThemeContext);
   return (
-    <div className="h-[8%]">
-      <div>
-        <label
-          htmlFor="toggle"
-          className="w-20 h-8 bg-white inline-block relative"
-        >
-          <input type="checkbox" className="w-0 h-0"></input>
-          <span className="before:w-4 before:h-4 before:rounded-full before:bg-slate-900 before:absolute top"></span>
-        </label>
-      </div>
+    <div className="h-[8%] flex items-center justify-around">
+        <Switch/>
+        <div className="h-full w-[16rem]"></div>
+        <img className="w-40 h-6" src={theme?.mode.social}/>
     </div>
   );
 }
