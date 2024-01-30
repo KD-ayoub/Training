@@ -3,11 +3,16 @@ import SiliconSvg from './assets/images/silicon.svg';
 import SiliconWhite from './assets/images/siliconwhite.svg';
 import SocialDark from './assets/images/socialDark.svg';
 import SocialWhite from './assets/images/socialwhite.svg';
+import darkCharacter from "./assets/images/darkMode_chr.png";
+import whiteCharacter from "./assets/images/flat_cap.png";
 type Theme = {
   background: string;
+  areaBackground: string;
   text: string;
+  border: string;
   silicon: string;
   social: string;
+  character: string;
 };
 type ThemeType = {
   theme: string;
@@ -15,17 +20,23 @@ type ThemeType = {
   setTheme: (arg: "dark" | "light") => void;
 };
 const DarkTheme: Theme = {
-  background: "#1E1E1E",
-  text: "#FFFFFF",
+  background: "bg-[#1E1E1E]",
+  areaBackground: 'bg-area',
+  text: "text-[#FFFFFF]",
+  border: "border-[#FFFFFF]",
   silicon: SiliconWhite,
   social: SocialWhite,
+  character: darkCharacter,
 };
 
 const LightTheme: Theme = {
-  background: "#D9D9D9",
-  text: "#1E1E1E",
+  background: "bg-[#D9D9D9]",
+  areaBackground: 'bg-transparent',
+  text: "text-[#1E1E1E]",
+  border: "border-[#1E1E1E]",
   silicon: SiliconSvg,
   social: SocialDark,
+  character: whiteCharacter,
 };
 
 export const ThemeContext = createContext<ThemeType | null>(null);

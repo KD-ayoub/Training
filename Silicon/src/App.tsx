@@ -6,10 +6,11 @@ import { useContext } from 'react'
 import { ThemeContext } from './ThemeContext'
 function App() {
   const theme = useContext(ThemeContext);
+  if (!theme) return ;
   console.log('the,e', theme);
   return (
     <>
-      <div className={`h-screen w-screen flex flex-col justify-between bg-[${theme?.mode.background}]`}>
+      <div className={`h-screen w-screen flex flex-col justify-between ${theme.mode.background}`}>
         <Header/>
         <Content/>
         <Footer/>

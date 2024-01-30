@@ -2,6 +2,14 @@
   background-color: transparent; 
 }
 
+.bg-button {
+  background: linear-gradient(to bottom right, #FFFFFF -25% , transparent);
+}
+
+.bg-area {
+  background: linear-gradient(to bottom right, #D8D8D8 -200% , transparent);
+}
+
 @font-face {
   font-family: 'Matrice';
   src: local("Matrice"),url('./assets/fonts/Matrice font/Matrice SemiBold.otf') format("truetype");

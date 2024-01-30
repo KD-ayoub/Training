@@ -6,11 +6,12 @@ import { ThemeContext } from "../ThemeContext";
 
 export default function Switch() {
     const theme = useContext(ThemeContext);
+    if (!theme) return ;
   return (
     <label className="switch">
-      <input type="checkbox" onChange={() => theme?.setTheme(theme.theme === 'dark' ? 'light' : 'dark')}/>
+      <input id="toggle" type="checkbox" onChange={() => theme.setTheme(theme.theme === 'dark' ? 'light' : 'dark')}/>
       <span className="slider">
-        <img className={`w-4 h-4 absolute top-[5px] left-[${theme?.theme === 'dark' ? '5px' : '35px'}] duration-300`} src={theme?.theme === 'dark' ? moon : sun}/>
+        <img className={`w-5 h-5 absolute top-[8px] ${theme.theme === 'dark' ? 'left-[8px]' : 'left-[49px]'} duration-300`} src={theme.theme === 'dark' ? moon : sun}/>
       </span>
     </label>
   );
