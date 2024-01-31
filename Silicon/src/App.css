@@ -1,18 +1,19 @@
+
 .content-background {
   background-color: transparent; 
 }
 
 .bg-button {
-  background: linear-gradient(to bottom right, #FFFFFF -25% , transparent);
+  background: linear-gradient(to bottom right, #FFFFFF -100% , transparent);
 }
 
 .bg-area {
   background: linear-gradient(to bottom right, #D8D8D8 -200% , transparent);
 }
 
-@font-face {
-  font-family: 'Matrice';
-  src: local("Matrice"),url('./assets/fonts/Matrice font/Matrice SemiBold.otf') format("truetype");
+
+.font-matrice-medium {
+  font-family: 'Matrice-medium';
 }
 
 .font-Montserat {
@@ -21,5 +22,5 @@
 }
 
 .font-Matrice {
-  font-family: 'Matrice';
+  font-family: 'Matrice-smiBold';
 }
