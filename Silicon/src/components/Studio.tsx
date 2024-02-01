@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import { ThemeContext } from "../ThemeContext";
 import Switch from "./Switch";
 import "../App.css";
+import ContentStudio from "./ContentStudio";
 
 export default function Studio() {
   const theme = useContext(ThemeContext);
@@ -32,7 +33,8 @@ export default function Studio() {
             </button>
           </div>
         </div>
-        <div className="h-[9%] flex items-center justify-around">
+        <ContentStudio/>
+        <div className="h-[8%] flex items-center justify-around">
           <Switch />
           <div className="w-64 h-16 bg-button border border-[#FFFFFF] flex flex-col justify-center items-center rounded-[20px] relative">
             <p className={`font-matrice-medium absolute top-1 ${theme.mode.text}`}>Total Threads:</p>

@@ -24,3 +24,24 @@
 .font-Matrice {
   font-family: 'Matrice-smiBold';
 }
+
+.font-matrice-bold {
+  font-family: 'Matrice-Bold';
+}
+.font-matrice-regular {
+  font-family: 'Matrice-Regular';
+}
+
+.inner-shadow {
+  /* box-shadow: inset 0 0 20px 5px #f8a100; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.dropdown {
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+div[id^='dropdownid']:hover + .dropdown {
+  opacity: 1;
+}

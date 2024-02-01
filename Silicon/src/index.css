@@ -11,3 +11,13 @@
     font-family: 'Matrice-medium';
     src: url('./fonts/Matrice-Medium.woff');
 }
+
+@font-face {
+  font-family: 'Matrice-Bold';
+  src: url('./fonts/Matrice-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Matrice-Regular';
+  src: url('./fonts/Matrice-Regular.woff');
+}
