@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gore";
+  src: url("./assets/fonts/Gore_Regular.woff");
+}

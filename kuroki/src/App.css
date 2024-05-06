@@ -1,0 +1,15 @@
+.styled-btn {
+  background: 
+  linear-gradient(to right,#5e0000, #9C0B0B, #5e0000) center,
+  linear-gradient(135deg, transparent 22px, #5e0000 0), top left,
+    linear-gradient(-45deg, transparent 22px, #5e0000 0) bottom right;
+  /* background: linear-gradient(to right, #5E0000, #9C0B0B, #5E0000); */
+  border-radius: 10px;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.75rem );
+}
+
+.font-GoreBold {
+  font-family: "Gore";
+}
