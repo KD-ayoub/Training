@@ -1,0 +1,45 @@
+.text-gradiant {
+  background: linear-gradient(to bottom, #5e0000, #9c0b0b, #5e0000);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.styled-div-anime {
+  background: linear-gradient(to right, #5e0000, #9c0b0b, #5e0000) center,
+    linear-gradient(135deg, transparent 50px, #5e0000 0), top left,
+    linear-gradient(-45deg, transparent 50px, #5e0000 0) bottom right;
+  border-radius: 20px;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}
+
+.styled-btn-Lore {
+  background: linear-gradient(to right, #5e0000, #9c0b0b, #5e0000) center,
+    linear-gradient(135deg, transparent 12px, #5e0000 0), top left,
+    linear-gradient(-45deg, transparent 12px, #5e0000 0) bottom right;
+  border-radius: 5px;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (min-width: 768px) {
+  .styled-btn-Lore {
+    background: linear-gradient(to right, #5e0000, #9c0b0b, #5e0000) center,
+      linear-gradient(135deg, transparent 15px, #5e0000 0), top left,
+      linear-gradient(-45deg, transparent 15px, #5e0000 0) bottom right;
+    border-radius: 8px;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  }
+}
+
+.join-btn {
+  background-image: url("../assets/images/test-btn.png");
+  border-image-source: url("../assets/images/test-btn.png");
+  /* border-image-slice: 2px fill 2px fill;
+  background-repeat: round; */
+}
